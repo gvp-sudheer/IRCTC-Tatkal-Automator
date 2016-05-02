@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "IRCTC FastBooking",
+  "description": "This extension books ticket at tatkal Time",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [ "management", "storage", "tabs" ],
+  
+  "content_scripts": [ {
+      "js": [ "login.js","journeyDetails.js","persons.js","paymentOption.js" ],
+      "matches": [ "*://*.irctc.co.in/eticketing*"  ]
+   }]
+}
