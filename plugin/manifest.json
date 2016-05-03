@@ -11,7 +11,12 @@
   "permissions": [ "management", "storage", "tabs" ],
   
   "content_scripts": [ {
-      "js": [ "login.js","journeyDetails.js","persons.js","paymentOption.js" ],
+      "js": [ "login.js","journeyDetails.js","persons.js","paymentOption.js"],
       "matches": [ "*://*.irctc.co.in/eticketing*"  ]
+   },
+   {
+      "js": [ "saveAutoFillDetails.js" ],
+      "matches": [ "http://localhost:63343/easybooking/src/index.html*"  ]
    }]
 }
+
