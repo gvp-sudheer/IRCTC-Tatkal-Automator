@@ -1,0 +1,74 @@
+
+/**
+    Menu Header CSS
+*/
+#header {
+
+}
+#logo {
+    width: 80%;
+    height: 100%;
+    margin: 0px auto;
+}
+#menu {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    display:none;
+    width: 100%;
+}
+#nav {
+    list-style: none;
+    padding: 0px;
+    width: 80%;
+    background-color: black;
+    height: 40px;
+    margin: 0px auto;
+    //display: inline-block;
+}
+#nav.vertical {
+    display: block;
+    padding-left: 20px;
+}
+#nav.vertical li {
+    display: list-item;
+    line-height: 40px;
+}
+#nav li {
+    display:inline-block;
+    padding-right: 40px;
+}
+#nav li:last-child {
+    padding-right: 0;
+}
+
+.ticketDetails {
+    width: 80%;
+    background-color: #E8E1E1;
+    margin: 0px auto;
+}
+
+@media screen and (max-width: 800px) {
+    #menu {
+        display: inline-block;
+    }
+    #nav {
+        display: none;
+    }
+}
+/**
+    End of Menu Header CSS
+*/
+
+#loginDetails{
+    margin: 2px auto;
+    width: 100%;
+}
+
+.textbox {
+    background: transparent url(http://html-generator.weebly.com/files/theme/input-text-8.png) repeat-x;
+    border: 1px solid #bed6f8;
+    outline:0;
+    height:25px;
+    width: 275px;
+}
